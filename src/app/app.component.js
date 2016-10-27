@@ -11,11 +11,13 @@ import appTemplate from './app.component.html'
 import '../../public/css/styles.css';
 import appStyling from './app.component.css';
 import '../main.js';
+import {GOOGLE_MAPS_DIRECTIVES,GOOGLE_MAPS_PROVIDERS} from 'angular2-google-maps/core';
 
 let AppComponent = Component({
     selector: 'my-app',
     template: appTemplate,
     styles: [appStyling],
+    directives: [GOOGLE_MAPS_DIRECTIVES]
 })
 .Class({
     constructor: function() {
